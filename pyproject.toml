@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "multi-job-posting-cli"
+version = "0.1.0"
+description = "A CLI tool for posting jobs to multiple platforms"
+authors = [
+    {name = "Your Name", email = "your.email@example.com"},
+]
+dependencies = [
+    "typer>=0.9.0",
+    "requests>=2.25.0",
+    "streamlit>=1.0.0",
+    "pytest>=6.0.0",
+    "fastapi>=0.100.0",
+    "uvicorn>=0.20.0",
+    "pydantic>=2.0.0",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+
+[project.scripts]
+multi-job-posting = "cli.main:app"
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

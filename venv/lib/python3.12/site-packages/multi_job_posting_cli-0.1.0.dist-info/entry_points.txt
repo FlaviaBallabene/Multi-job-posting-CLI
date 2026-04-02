@@ -1,0 +1,2 @@
+[console_scripts]
+multi-job-posting = cli.main:app

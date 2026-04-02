@@ -1,0 +1,30 @@
+{
+  "title": "Software Developer",
+  "location": "Los Angeles, CA",
+  "department": "Cybersecurity & Technology",
+  "employment_type": "Full-Time",
+  "clearance_required": true,
+  "clearance_level": "Secret",
+  "description": "We are looking for a Software Developer to build and enhance modern applications used across our technology organization. The ideal candidate has experience in Python, cloud technologies, and secure development practices, and enjoys collaborating in a fast-paced engineering environment.",
+  "responsibilities": [
+    "Develop and maintain secure software applications",
+    "Collaborate with cross-functional engineering teams",
+    "Implement DevSecOps practices and CI/CD workflows",
+    "Participate in code reviews and security assessments"
+  ],
+  "requirements": [
+    "3+ years of software development experience",
+    "Experience with Python or similar languages",
+    "Understanding of secure coding and cloud architectures"
+  ],
+  "benefits": [
+    "Health, dental, and vision insurance",
+    "Paid time off and holidays",
+    "Education and certification assistance",
+    "Retirement plan with employer contributions"
+  ],
+  "salary_range": {
+    "min": 120000,
+    "max": 155000
+  }
+}

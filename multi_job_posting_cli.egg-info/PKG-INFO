@@ -1,0 +1,118 @@
+Metadata-Version: 2.4
+Name: multi-job-posting-cli
+Version: 0.1.0
+Summary: A CLI tool for posting jobs to multiple platforms
+Author-email: Your Name <your.email@example.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: typer>=0.9.0
+Requires-Dist: requests>=2.25.0
+Requires-Dist: streamlit>=1.0.0
+Requires-Dist: pytest>=6.0.0
+Requires-Dist: fastapi>=0.100.0
+Requires-Dist: uvicorn>=0.20.0
+Requires-Dist: pydantic>=2.0.0
+
+# Multi-Job Posting CLI
+
+A command-line tool for posting jobs to multiple platforms like LinkedIn, Workday, and BambooHR.
+
+## Features
+
+- Post jobs via CLI
+- Support for multiple platforms
+- Mock APIs for testing
+- Streamlit web interface
+- Unit and integration tests
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/FlaviaBallabene/multi-job-posting-CLI.git
+   cd multi-job-posting-CLI
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -e .
+   ```
+
+## Usage
+
+### CLI
+
+Post a job using the CLI:
+```bash
+multi-job-posting --file examples/sample_job.json --boards linkedin,workday
+```
+
+### API Server
+
+Run the FastAPI server:
+```bash
+python api/server.py
+```
+
+Then post via API:
+```bash
+curl -X POST http://localhost:8000/linkedin/post -H "Content-Type: application/json" -d @examples/sample_job.json
+```
+
+### Streamlit GUI
+
+Run the Streamlit GUI:
+```bash
+streamlit run gui/app.py
+```
+
+Upload a job JSON file, select boards, and post jobs with a user-friendly interface.
+
+## Testing
+
+Run tests:
+```bash
+pytest
+```
+
+## Project Structure
+
+```
+multi-job-posting-cli/
+├── cli/
+│   ├── commands/
+│   │   └── post_job.py
+│   ├── utils/
+│   │   └── helpers.py
+│   └── main.py
+├── api/
+│   ├── linkedin/
+│   │   └── mock_api.py
+│   ├── workday/
+│   │   └── mock_api.py
+│   ├── bamboohr/
+│   │   └── mock_api.py
+│   └── server.py
+├── adapters/
+│   ├── linkedin.py
+│   ├── workday.py
+│   ├── bamboohr.py
+│   └── base.py
+├── gui/
+│   └── app.py
+├── streamlit_app/
+│   ├── pages/
+│   │   └── post_job_page.py
+│   └── app.py
+├── tests/
+│   ├── unit/
+│   │   ├── test_cli.py
+│   │   ├── test_adapters.py
+│   └── integration/
+│       └── test_post_flow.py
+├── examples/
+│   ├── sample_job.json
+│   └── posting_notebook.ipynb
+├── README.md
+└── pyproject.toml
+```
