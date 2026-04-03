@@ -1,6 +1,6 @@
 # Multi-Job Posting Automation 
 
-A unified automation framework for publishing job postings across multiple platforms—including LinkedIn, Workday, and BambooHR. Features include a Typer-based CLI, FastAPI mock services, a Streamlit GUI, integration tests, and storage for job history.
+A unified automation framework for publishing job postings across multiple platforms, including LinkedIn, Workday, and BambooHR. Features include a Typer-based CLI, FastAPI mock services, a Streamlit GUI, integration tests, and storage for job history.
 
 This project is a scalable, AI-friendly architecture for Recruiting technology automation, enabling both humans and bots to trigger consistent, repeatable job-posting workflows.
 
