@@ -1,6 +1,11 @@
-# Multi-Job Posting CLI
+# Multi-Job Posting Automation 
 
-A command-line tool for posting jobs to multiple platforms like LinkedIn, Workday, and BambooHR.
+A unified automation framework for publishing job postings across multiple platforms—including LinkedIn, Workday, and BambooHR. Features include a Typer-based CLI, FastAPI mock services, a Streamlit GUI, integration tests, and storage for job history.
+
+This project is a scalable, AI-friendly architecture for Recruiting technology automation, enabling both humans and bots to trigger consistent, repeatable job-posting workflows.
+
+<video controls src="Multi-Job Posting Automation.mp4" title="Title"></video>
+
 
 ## Features
 
