@@ -6,6 +6,8 @@ This project is a scalable, AI-friendly architecture for Recruiting technology a
 
 ![alt text](<Multi-Job Posting Automation.png>)
 
+[View the full demo video](https://github.com/FlaviaBallabene/Multi-job-posting-CLI/raw/main/Multi-Job%20Posting%20Automation.mp4)
+
 ## Features
 
 - Post jobs via CLI (Typer-based)
