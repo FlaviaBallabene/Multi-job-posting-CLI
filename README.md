@@ -4,7 +4,7 @@ A unified automation framework for publishing job postings across multiple platf
 
 This project is a scalable, AI-friendly architecture for Recruiting technology automation, enabling both humans and bots to trigger consistent, repeatable job-posting workflows.
 
-<video controls src="Multi-Job Posting Automation.mp4" title="Title"></video>
+<video controls src="https://github.com/FlaviaBallabene/Multi-job-posting-CLI/raw/main/Multi-Job%20Posting%20Automation.mp4" title="Multi-Job Posting Automation Demo"></video>
 
 
 ## Features
